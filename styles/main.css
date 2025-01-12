@@ -63,15 +63,18 @@ section {
 }
 
 #home {
-    background: url('assets/images/background.png') no-repeat center center/cover;
-    color: var(--white);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-    min-height: 100vh;
+    background-image: url("../assets/images/image.png"); /* Ścieżka do obrazka */
+    background-size: cover; /* Dopasowanie obrazka do całej sekcji */
+    background-position: center; /* Wyśrodkowanie obrazka */
+    background-repeat: no-repeat; /* Zapobieganie powtarzaniu obrazka */
+    height: 100vh; /* Wysokość sekcji na cały ekran */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding: 2rem;
+    align-items: center;
+    color: white; /* Kolor tekstu na tle */
+    text-align: center;
+    padding: 20px;
 }
 
 #home h1 {
