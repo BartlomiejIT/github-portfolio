@@ -63,7 +63,7 @@ section {
 }
 
 #home {
-    background: url('assets/images/background.png') no-repeat center center/cover;
+    background: url('../assets/images/background.png') no-repeat center center/cover;
     color: var(--white);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
     min-height: 100vh;
