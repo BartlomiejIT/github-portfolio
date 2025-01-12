@@ -76,14 +76,6 @@ section {
     text-align: center;
 }
 
-#home .overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Czarny półprzezroczysty overlay */
-    padding: 20px;
-    border-radius: 10px;
-    color: white; /* Kolor tekstu */
-    max-width: 800px;
-}
-
 #home h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -95,6 +87,7 @@ section {
     font-size: 1.2rem;
     max-width: 600px;
     margin-bottom: 2rem;
+    color: var(--white);
 }
 
 /* Projekty */
