@@ -55,106 +55,52 @@ nav ul li a:hover {
     color: var(--accent-color);
 }
 
-/* Sekcja główna */
-#home {
-    text-align: center;
-    padding: 2rem 0;
-}
-
-.home-image-container {
-    width: 100%;
-    max-height: 400px;
-    overflow: hidden;
-    margin-bottom: 2rem;
-}
-
-.home-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.home-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-#home h1 {
-    font-size: 3rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-#home p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: var(--text-color);
-}
-
-/* Wyśrodkowanie tytułów */
-#projects h2,
-#skills h2,
-#contact h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin: 2rem 0;
-    color: var(--primary-color);
-}
-
-/* Wyśrodkowanie sekcji */
-#projects,
-#skills,
-#contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem 0;
-}
-
 /* Sekcja projektów */
-.projects-grid {
+#projects {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.projects-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    margin-top: 2rem;
 }
 
-.projects-tab {
+.project-card {
     background: var(--white);
     border-radius: 8px;
-    overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projects-tab:hover {
+.project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-.projects-tab img {
+.project-card img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.project-info {
-    padding: 1rem;
-    text-align: center;
-}
-
-.project-info h3 {
+.project-card h3 {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    margin: 1rem 0;
 }
 
-.project-info p {
+.project-card p {
     font-size: 1rem;
-    margin-bottom: 1rem;
+    color: var(--text-color);
+    margin: 0 1rem 1.5rem;
 }
 
-.btn {
+.project-card .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     background: var(--accent-color);
@@ -163,13 +109,22 @@ nav ul li a:hover {
     border-radius: 4px;
     font-weight: 500;
     transition: background 0.3s ease;
+    margin-bottom: 1rem;
 }
 
-.btn:hover {
+.project-card .btn:hover {
     background: var(--primary-color);
 }
 
 /* Sekcja umiejętności */
+#skills h2,
+#contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
