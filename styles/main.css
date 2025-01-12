@@ -57,54 +57,119 @@ nav ul li a:hover {
 
 /* Sekcja główna */
 #home {
-    padding: 2rem;
     text-align: center;
+    padding: 2rem 0;
+}
+
+.home-image-container {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    margin-bottom: 2rem;
 }
 
 .home-image {
     width: 100%;
-    max-height: 400px;
+    height: auto;
     object-fit: cover;
-    margin-bottom: 2rem;
-    border-radius: 10px;
 }
 
-.overlay {
+.home-content {
     max-width: 800px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    color: black;
+    padding: 1rem;
 }
 
 #home h1 {
     font-size: 3rem;
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 #home p {
     font-size: 1.2rem;
     line-height: 1.8;
+    color: var(--text-color);
 }
 
-/* Sekcje poniżej */
-.projects-grid,
-.skills-container {
+/* Projekty */
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.projects-tab,
-.skill-item {
-    padding: 1.5rem;
+.projects-tab {
+    background: var(--white);
     border-radius: 8px;
-    background: var(--light-gray);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
+.projects-tab:hover {
+    transform: translateY(-5px);
+}
+
+.projects-tab img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-info {
+    padding: 1rem;
+    text-align: center;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--accent-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+}
+
+/* Kontakt */
 .contact-info {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    background: var(--light-gray);
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--accent-color);
+}
+
+.contact-item p {
+    font-size: 1rem;
 }
