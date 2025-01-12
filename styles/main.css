@@ -63,7 +63,7 @@ section {
 }
 
 #home {
-    background-image: url('assets/images/background.png'); /* Ścieżka do obrazka */
+    background-image: url('https://github.com/BartlomiejIT/github-portfolio/blob/main/assets/images/background.png'); /* Ścieżka do obrazka */
     background-size: cover; /* Dopasowanie obrazka do całej sekcji */
     background-position: center; /* Wyśrodkowanie obrazka */
     background-repeat: no-repeat; /* Zapobieganie powtarzaniu obrazka */
