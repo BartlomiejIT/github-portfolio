@@ -92,7 +92,17 @@ nav ul li a:hover {
     color: var(--text-color);
 }
 
-/* Projekty */
+/* Wyśrodkowanie tytułów */
+#projects h2,
+#skills h2,
+#contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+}
+
+/* Sekcja projektów */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -147,7 +157,14 @@ nav ul li a:hover {
     background: var(--primary-color);
 }
 
-/* Kontakt */
+/* Sekcja umiejętności */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+/* Sekcja kontaktowa */
 .contact-info {
     display: grid;
     grid-template-columns: 1fr;
