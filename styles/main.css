@@ -64,7 +64,7 @@ section {
 
 #home {
     position: relative;
-    background-image: url("main/assets/images/background.png"); /* Ścieżka do obrazka */
+    background-image: url("/github-portfolio/assets/images/background.png"); /* Ścieżka do obrazka */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
