@@ -98,8 +98,20 @@ nav ul li a:hover {
 #contact h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     color: var(--primary-color);
+}
+
+/* Wyśrodkowanie sekcji */
+#projects,
+#skills,
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
 }
 
 /* Sekcja projektów */
