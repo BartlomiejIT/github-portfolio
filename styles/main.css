@@ -161,12 +161,44 @@ nav ul li a:hover {
     background: var(--primary-color);
 }
 
-/* Sekcja umiejętności */
+/* Sekcja "Skills" */
+#skills {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
 .skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie poziome */
+    flex-wrap: wrap; /* Zawijanie elementów, jeśli zabraknie miejsca */
     gap: 2rem;
 }
+
+.skill-item {
+    background: var(--light-gray);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px; /* Stała szerokość dla lepszego wyglądu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.skill-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
 
 /* Sekcja kontaktowa */
 .contact-info {
