@@ -1,96 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bartłomiej's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Twoje Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <h1>Bartlomiej's Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Nawigacja -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projekty">Projekty</a></li>
+            <li><a href="#umiejetnosci">Umiejętności</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
 
-    <!-- HERO SECTION -->
-    <section id="hero">
-        <div class="container">
-            <h2>Welcome to My Portfolio</h2>
-            <p>Your next Data Analyst – passionate about insights, trends, and impactful data solutions.</p>
-        </div>
+    <!-- Sekcja główna -->
+    <section id="home">
+        <h1>Twoje Imię</h1>
+        <p>Krótki opis o Tobie</p>
     </section>
 
-    <!-- ABOUT ME -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm Bartłomiej, a Junior Data Analyst with a passion for transforming raw data into actionable insights. My expertise lies in Python, SQL, Excel, and Power BI, and I'm eager to contribute to data-driven projects that make a difference.</p>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Medical Cost Analysis</h3>
-                <p>Analyzed medical insurance costs using Excel and created actionable insights to optimize spending.</p>
-                <a href="https://github.com/BartlomiejT/medical-cost-analysis" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>Campaign Strategy with Power BI</h3>
-                <p>Built dashboards and analyzed influencer campaign data using SQL, Excel, and Power BI to drive decision-making.</p>
-                <a href="https://github.com/BartlomiejT/campaign-strategy" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <h3>World Happiness Report Analysis</h3>
-                <p>Explored happiness metrics globally using Python, uncovering correlations and trends over the years.</p>
-                <a href="https://github.com/BartlomiejT/happiness-report" target="_blank">View Project</a>
+    <!-- Sekcja projektów -->
+    <section id="projekty">
+        <h2>Moje Projekty</h2>
+        <div class="projekty-grid">
+            <div class="projekt-karta">
+                <img src="projekt-image.jpg" alt="Nazwa projektu">
+                <div class="projekt-info">
+                    <h3>Nazwa Projektu</h3>
+                    <p>Krótki opis projektu</p>
+                    <a href="#" class="btn">Zobacz więcej</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
-                <li>SQL (Data Extraction, Transformation, and Loading)</li>
-                <li>Excel (Advanced Formulas, Pivot Tables, Dashboards)</li>
-                <li>Power BI (Data Modeling, Visualization)</li>
-                <li>Data Cleaning & Preparation</li>
-                <li>Statistical Analysis</li>
-            </ul>
+    <!-- Sekcja umiejętności -->
+    <section id="umiejetnosci">
+        <h2>Umiejętności</h2>
+        <div class="skills-container">
+            <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <h3>Programowanie</h3>
+                <p>Opis umiejętności</p>
+            </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>If you'd like to get in touch, feel free to reach out via email or LinkedIn!</p>
-            <p><a href="mailto:bartlomiej@example.com">Email Me</a> | <a href="https://www.linkedin.com/in/bartlomiej" target="_blank">LinkedIn</a></p>
+    <!-- Sekcja kontaktowa -->
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <div class="contact-info">
+            <!-- Tu będą dane kontaktowe -->
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <p>© 2025 BartłomiejT. All rights reserved.</p>
-        </div>
-    </footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
