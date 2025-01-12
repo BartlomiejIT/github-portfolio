@@ -169,8 +169,8 @@ nav ul li a:hover {
 
 .skills-container {
     display: flex;
-    justify-content: center; /* Wyśrodkowanie poziome */
-    flex-wrap: wrap; /* Zawijanie elementów, jeśli zabraknie miejsca */
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -179,7 +179,7 @@ nav ul li a:hover {
     padding: 1.5rem;
     border-radius: 8px;
     text-align: center;
-    width: 300px; /* Stała szerokość dla lepszego wyglądu */
+    width: 300px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -198,7 +198,6 @@ nav ul li a:hover {
     font-size: 1rem;
     line-height: 1.5;
 }
-
 
 /* Sekcja kontaktowa */
 .contact-info {
