@@ -71,13 +71,13 @@ section {
     color: var(--primary-color);
 }
 
-.projekty-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.projekt-karta {
+.project-tab {
     background: var(--white);
     border-radius: 8px;
     overflow: hidden;
@@ -85,7 +85,7 @@ section {
     transition: transform 0.3s ease;
 }
 
-.projekt-karta:hover {
+.project-tab:hover {
     transform: translateY(-5px);
 }
 
