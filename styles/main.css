@@ -64,7 +64,7 @@ section {
 
 #home {
     position: relative;
-    background-image: url("https://github.com/BartlomiejIT/github-portfolio/assets/images/image.png"); /* Ścieżka do obrazka */
+    background-image: url("main/assets/images/image.png"); /* Ścieżka do obrazka */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
