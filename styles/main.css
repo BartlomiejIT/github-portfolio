@@ -102,23 +102,12 @@ nav ul li a:hover {
     color: var(--primary-color);
 }
 
-/* Wyśrodkowanie sekcji */
-#projects,
-#skills,
-#contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 2rem 0;
-}
-
 /* Sekcja projektów */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    margin-top: 2rem;
 }
 
 .projects-tab {
@@ -147,14 +136,16 @@ nav ul li a:hover {
 .project-info h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: var(--primary-color);
 }
 
 .project-info p {
     font-size: 1rem;
     margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
-.btn {
+.project-info .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
     background: var(--accent-color);
@@ -165,7 +156,7 @@ nav ul li a:hover {
     transition: background 0.3s ease;
 }
 
-.btn:hover {
+.project-info .btn:hover {
     background: var(--primary-color);
 }
 
@@ -202,4 +193,3 @@ nav ul li a:hover {
 .contact-item p {
     font-size: 1rem;
 }
-
